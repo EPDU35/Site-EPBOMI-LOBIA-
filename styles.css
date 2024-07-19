@@ -1,0 +1,133 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f7f9; /* Bleu clair pour le fond */
+    color: #333;
+}
+
+header, footer {
+    background-color: #0077cc;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px; /* Ajuster la taille selon vos besoins */
+    margin-right: 20px;
+}
+
+header h1, footer p {
+    margin: 0;
+    font-size: 1.5em; /* Taille de police légèrement réduite */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em; /* Taille de police légèrement réduite */
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #0077cc;
+    font-size: 1.8em; /* Taille de police augmentée pour les titres de section */
+    margin-bottom: 0.5em;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.slide-content h3 {
+    font-size: 2.5em; /* Taille de police plus grande pour les titres de diapositive */
+    margin-bottom: 0.5em;
+}
+
+.slide-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.
+}
+
+button{
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, -5), 0px 0px 0px 0px rgba(39, 200, 255, -5);
+    transition: all .2s;
+}
+
+button::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(225deg, #154c79 0%, #1e81b0 50%, #063970 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .2s;
+}
+
+button:hover::after {
+    transform: rotate();
+}

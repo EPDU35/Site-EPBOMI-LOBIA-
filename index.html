@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPBOMI LOBIA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="téléchargement__2_-removebg-preview.png"
+    type="image/png"><!--lien vers le favicon-->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="téléchargement__2_-removebg-preview.png" alt="EPBOMI LOBIA" class="logo">
+            <h1>Église Protestante Baptiste Œuvres et Mission Internationale de Lobia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Lien vers la page de contact -->
+                <li><a href="offrande.html">Dîme & Offrande</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow">
+        <div class="slides fade">
+            <img src="3.jpg" alt="Retrouvez l'église chez vous">
+            <div class="slide-content">
+                <h3>Retrouvez l'église chez vous</h3>
+                <a href="https://youtube.com/@epbomilobiadaloa?si=016G-Qfc5uRsrN9K">Suivre le culte</a>
+            </div>
+        </div>
+        <div class="slides fade">
+            <img src="2.jpg" alt="Bienvenue à L'église en ligne">
+            <div class="slide-content">
+                <h3>Bienvenue à L'église en ligne</h3>
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+        <center><h2>Accueil</h2></center>
+        <center><li>Escale du Rév. Dr DION Yayé Robert au siège de la region de Daloa.</li>
+                <p>Escale du  Rév. Dr DION Yayé Robert au siège de la Région de  Daloa.   
+            Aujourd’hui 18 Juillet 2024, le Directeur de la Région Missionnaire de Daloa, l'apôtre Anastase NIAMIAN, entouré du Conseil Pastoral et des anciens ont accueilli le Rév. Dr DION Yayé Robert et sa délégation . En partence pour Danané ou il doit dédicacer le temple , il a marqué un arrêt à LOBIA , siège de la Région Missionnaire de Daloa. 
+           Après le repas et la prière , il prodigues de sages conseils à ses filleuls.  Il continue son chemin pour rejoindre la délégation de de son épouse Hélène DION qui l'a précédé  la veille   
+                   Reportage: Medias Region Daloa 
+                 </p>
+        </center>
+    </section>
+
+      <section id="services">
+        <center><h2>Services</h2>
+        <ul>
+            <p>Culte du dimanche pour la jeunesse : 7h40 - 9h30</p>
+            <p>Culte du dimanche pour les adultes : 9h30 - 12h30</p>
+            <p>Étude biblique le mercredi : 18h00 - 20h00</p>
+            <p>Culte d'édification le vendredi : 18h30 - 20h00</p>
+         </ul>
+        </center>
+    </section>
+
+    
+  <section id="about">
+        <center><h2>À propos</h2>
+        <p>Notre église est dédiée à la mission d'apporter l'Évangile à tous et de servir notre communauté avec amour et compassion.</p>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Église Protestante Baptiste Œuvres et Mission Internationale de Lobia. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Script pour le diaporama
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slides');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 20000); // Change de diapositive toutes les 20 secondes
+        }
+    </script>
+</body>
+</html>

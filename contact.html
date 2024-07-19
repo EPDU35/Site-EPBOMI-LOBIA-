@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - EPBOMI LOBIA</title>
+    <link rel="stylesheet" href="contact-styles.css"> <!-- Lien vers le fichier CSS spécifique à la page de contact -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="téléchargement__2_-removebg-preview.png"
+    type="image/png"><!--lien vers le favicon-->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="téléchargement__2_-removebg-preview.png" alt="Logo de l'église" class="logo">
+            <h1>Église Protestante Baptiste Œuvres et Mission Internationale de Lobia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="offrande.html">Dîme & Offrande</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Adresse: Côte D'ivoire, Daloa, En face de la COOPEC a 100m du centre culturel</p>
+        <p>Email: epbomilobia@gmail.com</p>
+        <p>Téléphone: +225 07 09 03 55 22</p>
+        
+        <form action="submit_contact.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Église Protestante Baptiste Œuvres et Mission Internationale de Lobia. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
